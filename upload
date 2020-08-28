@@ -1,7 +1,0 @@
-if [ "$1" == "-help" ] 
-then 
-	echo "Syntax: upload [path to file] [filename]"
-	exit 0
-else 
-	curl https://bashupload.com/$2 --data-binary @$1
-fi
